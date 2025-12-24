@@ -1,230 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop | Learnermission</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="header-inner container">
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div class="logo-mark">L</div>
-        <div class="logo-text">
-          <span class="logo-title">Learnermission</span>
-          <span class="logo-tagline">Technology that Serves You</span>
-        </div>
-      </div>
-      <nav class="primary-nav">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <div class="actions">
-        <button class="icon-btn" aria-label="Search">&#128269;</button>
-        <button class="icon-btn" aria-label="Cart">&#128722;</button>
-        <button class="icon-btn" aria-label="Account">&#128100;</button>
-        <button class="icon-btn burger" aria-label="Menu">&#9776;</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="container shop-hero">
-      <div class="section-title" style="margin-bottom:16px;">
-        <span>Shop</span>
-        <h2>Browse products</h2>
-      </div>
-      <div class="sort-bar">
-        <div style="color:var(--color-muted);">24 items • Updated daily</div>
-        <div style="display:flex;gap:10px;align-items:center;">
-          <label for="sort" style="font-weight:600;color:var(--color-muted);">Sort by</label>
-          <select id="sort">
-            <option>Newest</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
-          </select>
-        </div>
-      </div>
-    </section>
-
-    <section class="container" style="padding-bottom:64px;">
-      <div class="shop-layout">
-        <aside class="sidebar">
-          <div class="filter-group">
-            <div class="filter-title">Category</div>
-            <div class="filter-list">
-              <label class="checkbox"><input type="checkbox"> Laptops</label>
-              <label class="checkbox"><input type="checkbox"> Accessories</label>
-              <label class="checkbox"><input type="checkbox"> Components</label>
-              <label class="checkbox"><input type="checkbox"> Printers</label>
-              <label class="checkbox"><input type="checkbox"> Networking</label>
-            </div>
-          </div>
-          <div class="filter-group">
-            <div class="filter-title">Price range (NPR)</div>
-            <div class="filter-list">
-              <label class="checkbox"><input type="radio" name="price"> Under 25,000</label>
-              <label class="checkbox"><input type="radio" name="price"> 25,000 - 75,000</label>
-              <label class="checkbox"><input type="radio" name="price"> 75,000 - 150,000</label>
-              <label class="checkbox"><input type="radio" name="price"> 150,000 +</label>
-            </div>
-          </div>
-          <div class="filter-group">
-            <div class="filter-title">Availability</div>
-            <div class="filter-list">
-              <label class="checkbox"><input type="checkbox" checked> In stock</label>
-              <label class="checkbox"><input type="checkbox"> Pre-order</label>
-            </div>
-          </div>
-          <div style="margin-top:16px;display:flex;gap:8px;">
-            <button class="btn btn-ghost" style="flex:1;">Clear all</button>
-            <button class="btn btn-primary" style="flex:1;">Apply</button>
-          </div>
-        </aside>
-
-        <div>
-          <div class="products-grid">
-            <article class="card product-card">
-              <div class="product-img">
-                <span class="badge-flag">New</span>
-                <img src="https://via.placeholder.com/320x200" alt="Acer Swift 3">
-              </div>
-              <h3 class="product-title">Acer Swift 3 OLED</h3>
-              <div class="price">NPR 105,000</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <img src="https://via.placeholder.com/320x200" alt="Logitech G Pro X">
-              </div>
-              <h3 class="product-title">Logitech G Pro X Headset</h3>
-              <div class="price">NPR 18,500</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <span class="badge-flag" style="background:#22c55e;">Low stock</span>
-                <img src="https://via.placeholder.com/320x200" alt="Ryzen 5 7600">
-              </div>
-              <h3 class="product-title">AMD Ryzen 5 7600 CPU</h3>
-              <div class="price">NPR 34,000</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <img src="https://via.placeholder.com/320x200" alt="Canon G3010">
-              </div>
-              <h3 class="product-title">Canon G3010 All-in-One Printer</h3>
-              <div class="price">NPR 32,500</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <img src="https://via.placeholder.com/320x200" alt="TP-Link Deco XE75">
-              </div>
-              <h3 class="product-title">TP-Link Deco XE75 Mesh Wi‑Fi</h3>
-              <div class="price">NPR 48,000</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <span class="badge-flag" style="background:#f97316;">Hot</span>
-                <img src="https://via.placeholder.com/320x200" alt="RTX 4070">
-              </div>
-              <h3 class="product-title">NVIDIA RTX 4070</h3>
-              <div class="price">NPR 112,000</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <img src="https://via.placeholder.com/320x200" alt="Kingston NV2 1TB">
-              </div>
-              <h3 class="product-title">Kingston NV2 1TB NVMe</h3>
-              <div class="price">NPR 11,500</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-            <article class="card product-card">
-              <div class="product-img">
-                <img src="https://via.placeholder.com/320x200" alt="Antec ATX Case">
-              </div>
-              <h3 class="product-title">Antec NX ATX Case</h3>
-              <div class="price">NPR 8,500</div>
-              <div class="actions-row">
-                <button class="btn btn-primary">Add to Cart</button>
-                <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
-              </div>
-            </article>
-          </div>
-          <div class="pagination">
-            <button class="btn btn-ghost">Previous</button>
-            <button class="btn btn-primary">Next</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <div class="logo-mark" style="background:#1f3a93;">L</div>
-          <div class="logo-text" style="color:#fff;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Learnermission</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner container">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <div class="logo-mark">L</div>
+          <div class="logo-text">
             <span class="logo-title">Learnermission</span>
-            <span class="logo-tagline" style="color:#cbd5e1;">Technology that Serves You</span>
+            <span class="logo-tagline">Technology that Serves You</span>
           </div>
         </div>
-        <p style="color:#cbd5e1;">Local tech shop for students, offices, and small businesses in Nepal.</p>
+        <nav class="primary-nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Search">&#128269;</button>
+          <button class="icon-btn" aria-label="Cart">&#128722;</button>
+          <button class="icon-btn" aria-label="Account">&#128100;</button>
+          <button class="icon-btn burger" aria-label="Menu">&#9776;</button>
+        </div>
       </div>
-      <div>
-        <div class="footer-title">Quick links</div>
-        <a class="footer-link" href="index.html">Home</a>
-        <a class="footer-link" href="shop.html">Shop</a>
-        <a class="footer-link" href="index.html#services">Services</a>
-        <a class="footer-link" href="index.html#about">About</a>
+    </header>
+
+    <main>
+      <section class="container shop-hero">
+        <div class="section-title" style="margin-bottom: 16px">
+          <span>Shop</span>
+          <h2>Browse products</h2>
+        </div>
+        <div class="sort-bar">
+          <div style="color: var(--color-muted)">24 items • Updated daily</div>
+          <div style="display: flex; gap: 10px; align-items: center">
+            <label
+              for="sort"
+              style="font-weight: 600; color: var(--color-muted)"
+              >Sort by</label
+            >
+            <select id="sort">
+              <option>Newest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-bottom: 64px">
+        <div class="shop-layout">
+          <aside class="sidebar">
+            <div class="filter-group">
+              <div class="filter-title">Category</div>
+              <div class="filter-list">
+                <label class="checkbox"
+                  ><input type="checkbox" /> Laptops</label
+                >
+                <label class="checkbox"
+                  ><input type="checkbox" /> Accessories</label
+                >
+                <label class="checkbox"
+                  ><input type="checkbox" /> Components</label
+                >
+                <label class="checkbox"
+                  ><input type="checkbox" /> Printers</label
+                >
+                <label class="checkbox"
+                  ><input type="checkbox" /> Networking</label
+                >
+              </div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-title">Price range (NPR)</div>
+              <div class="filter-list">
+                <label class="checkbox"
+                  ><input type="radio" name="price" /> Under 25,000</label
+                >
+                <label class="checkbox"
+                  ><input type="radio" name="price" /> 25,000 - 75,000</label
+                >
+                <label class="checkbox"
+                  ><input type="radio" name="price" /> 75,000 - 150,000</label
+                >
+                <label class="checkbox"
+                  ><input type="radio" name="price" /> 150,000 +</label
+                >
+              </div>
+            </div>
+            <div class="filter-group">
+              <div class="filter-title">Availability</div>
+              <div class="filter-list">
+                <label class="checkbox"
+                  ><input type="checkbox" checked /> In stock</label
+                >
+                <label class="checkbox"
+                  ><input type="checkbox" /> Pre-order</label
+                >
+              </div>
+            </div>
+            <div style="margin-top: 16px; display: flex; gap: 8px">
+              <button class="btn btn-ghost" style="flex: 1">Clear all</button>
+              <button class="btn btn-primary" style="flex: 1">Apply</button>
+            </div>
+          </aside>
+
+          <div>
+            <div class="products-grid">
+              <article class="card product-card">
+                <div class="product-img">
+                  <span class="badge-flag">New</span>
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Acer Swift 3"
+                  />
+                </div>
+                <h3 class="product-title">Acer Swift 3 OLED</h3>
+                <div class="price">NPR 105,000</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Logitech G Pro X"
+                  />
+                </div>
+                <h3 class="product-title">Logitech G Pro X Headset</h3>
+                <div class="price">NPR 18,500</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <span class="badge-flag" style="background: #22c55e"
+                    >Low stock</span
+                  >
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Ryzen 5 7600"
+                  />
+                </div>
+                <h3 class="product-title">AMD Ryzen 5 7600 CPU</h3>
+                <div class="price">NPR 34,000</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Canon G3010"
+                  />
+                </div>
+                <h3 class="product-title">Canon G3010 All-in-One Printer</h3>
+                <div class="price">NPR 32,500</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="TP-Link Deco XE75"
+                  />
+                </div>
+                <h3 class="product-title">TP-Link Deco XE75 Mesh Wi‑Fi</h3>
+                <div class="price">NPR 48,000</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <span class="badge-flag" style="background: #f97316"
+                    >Hot</span
+                  >
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="RTX 4070"
+                  />
+                </div>
+                <h3 class="product-title">NVIDIA RTX 4070</h3>
+                <div class="price">NPR 112,000</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Kingston NV2 1TB"
+                  />
+                </div>
+                <h3 class="product-title">Kingston NV2 1TB NVMe</h3>
+                <div class="price">NPR 11,500</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+              <article class="card product-card">
+                <div class="product-img">
+                  <img
+                    src="https://via.placeholder.com/320x200"
+                    alt="Antec ATX Case"
+                  />
+                </div>
+                <h3 class="product-title">Antec NX ATX Case</h3>
+                <div class="price">NPR 8,500</div>
+                <div class="actions-row">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button
+                    class="btn btn-ghost"
+                    onclick="location.href='product.html'"
+                  >
+                    View
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="pagination">
+              <button class="btn btn-ghost">Previous</button>
+              <button class="btn btn-primary">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-bottom: 10px;
+            "
+          >
+            <div class="logo-mark" style="background: #1f3a93">L</div>
+            <div class="logo-text" style="color: #fff">
+              <span class="logo-title">Learnermission</span>
+              <span class="logo-tagline" style="color: #cbd5e1"
+                >Technology that Serves You</span
+              >
+            </div>
+          </div>
+          <p style="color: #cbd5e1">
+            Local tech shop for students, offices, and small businesses in
+            Nepal.
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Quick links</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="shop.html">Shop</a>
+          <a class="footer-link" href="index.html#services">Services</a>
+          <a class="footer-link" href="index.html#about">About</a>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <div class="footer-link">📞 +977-9800000000</div>
+          <div class="footer-link">✉️ hello@learnermission.com</div>
+          <div class="footer-link">📍 Kathmandu, Nepal</div>
+        </div>
+        <div>
+          <div class="footer-title">Follow</div>
+          <div class="footer-link">Facebook</div>
+          <div class="footer-link">Instagram</div>
+          <div class="footer-link">YouTube</div>
+        </div>
       </div>
-      <div>
-        <div class="footer-title">Contact</div>
-        <div class="footer-link">📞 +977-9800000000</div>
-        <div class="footer-link">✉️ hello@learnermission.com</div>
-        <div class="footer-link">📍 Kathmandu, Nepal</div>
+      <div class="container footer-meta">
+        © 2025 Learnermission. All rights reserved.
       </div>
-      <div>
-        <div class="footer-title">Follow</div>
-        <div class="footer-link">Facebook</div>
-        <div class="footer-link">Instagram</div>
-        <div class="footer-link">YouTube</div>
-      </div>
-    </div>
-    <div class="container footer-meta">© 2025 Learnermission. All rights reserved.</div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
