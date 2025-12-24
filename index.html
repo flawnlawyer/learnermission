@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learnermission | Technology that Serves You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner container">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="logo-mark">L</div>
+        <div class="logo-text">
+          <span class="logo-title">Learnermission</span>
+          <span class="logo-tagline">Technology that Serves You</span>
+        </div>
+      </div>
+      <nav class="primary-nav">
+        <a href="#home">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" aria-label="Search">&#128269;</button>
+        <button class="icon-btn" aria-label="Cart">&#128722;</button>
+        <button class="icon-btn" aria-label="Account">&#128100;</button>
+        <button class="icon-btn burger" aria-label="Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="container hero">
+      <div>
+        <span class="badge">Local tech partner</span>
+        <h1>Reliable Tech. Honest Pricing. Local Support.</h1>
+        <p>Your one-stop destination for computers, accessories, and IT services.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+          <button class="btn btn-primary" onclick="location.href='shop.html'">Shop Now</button>
+          <button class="btn btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});">Our Services</button>
+        </div>
+        <div class="trust-row">
+          <span>✅ Genuine products</span>
+          <span>🛠 Local support</span>
+          <span>💬 Transparent pricing</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="hero-card">
+          <img src="https://via.placeholder.com/520x320" alt="Laptop and accessories">
+          <div class="hero-chips">
+            <span class="chip">Laptops</span>
+            <span class="chip">Accessories</span>
+            <span class="chip">Components</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="categories">
+      <div class="section-title">
+        <span>Shop by category</span>
+        <h2>Find what you need fast</h2>
+      </div>
+      <div class="grid-cards">
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3 class="card-title">Laptops</h3>
+          <p class="card-text">Work, study, and create with reliable laptops.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎧</div>
+          <h3 class="card-title">Accessories</h3>
+          <p class="card-text">Headsets, keyboards, mice, and more.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🖥</div>
+          <h3 class="card-title">Components</h3>
+          <p class="card-text">CPUs, GPUs, RAM, storage for every build.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🖨</div>
+          <h3 class="card-title">Printers</h3>
+          <p class="card-text">Office-ready printing for teams and homes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3 class="card-title">Networking</h3>
+          <p class="card-text">Routers, switches, and reliable Wi‑Fi gear.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="featured">
+      <div class="section-title">
+        <span>Featured products</span>
+        <h2>Popular picks in stock</h2>
+      </div>
+      <div class="products-grid">
+        <article class="card product-card">
+          <div class="product-img">
+            <span class="badge-flag">New</span>
+            <img src="https://via.placeholder.com/320x200" alt="Lenovo IdeaPad 5">
+          </div>
+          <h3 class="product-title">Lenovo IdeaPad 5 Ryzen 7</h3>
+          <div class="price">NPR 98,000</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-img">
+            <span class="badge-flag" style="background:#f97316;">Hot</span>
+            <img src="https://via.placeholder.com/320x200" alt="HP ProBook">
+          </div>
+          <h3 class="product-title">HP ProBook 450 G9 Core i7</h3>
+          <div class="price">NPR 125,000</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-img">
+            <span class="badge-flag" style="background:#22c55e;">Low stock</span>
+            <img src="https://via.placeholder.com/320x200" alt="Dell XPS 13">
+          </div>
+          <h3 class="product-title">Dell XPS 13 OLED</h3>
+          <div class="price">NPR 195,000</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-img">
+            <img src="https://via.placeholder.com/320x200" alt="Logitech MX Master 3S">
+          </div>
+          <h3 class="product-title">Logitech MX Master 3S Mouse</h3>
+          <div class="price">NPR 15,500</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-img">
+            <img src="https://via.placeholder.com/320x200" alt="AMD Ryzen 7 7800X3D">
+          </div>
+          <h3 class="product-title">AMD Ryzen 7 7800X3D Processor</h3>
+          <div class="price">NPR 59,000</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+        <article class="card product-card">
+          <div class="product-img">
+            <img src="https://via.placeholder.com/320x200" alt="TP-Link Archer AX72">
+          </div>
+          <h3 class="product-title">TP-Link Archer AX72 Wi‑Fi 6 Router</h3>
+          <div class="price">NPR 22,500</div>
+          <div class="actions-row">
+            <button class="btn btn-primary">Add to Cart</button>
+            <button class="btn btn-ghost" onclick="location.href='product.html'">View</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="services">
+      <div class="section-title">
+        <span>Services</span>
+        <h2>Expert help when you need it</h2>
+      </div>
+      <div class="services-grid">
+        <div class="card service-card">
+          <div class="card-icon">🛠</div>
+          <h3 class="card-title">Custom PC Build</h3>
+          <p class="card-text">Tailored rigs for gaming, design, or business with transparent parts list.</p>
+        </div>
+        <div class="card service-card">
+          <div class="card-icon">💼</div>
+          <h3 class="card-title">IT Support</h3>
+          <p class="card-text">On-site and remote troubleshooting, maintenance, and quick response.</p>
+        </div>
+        <div class="card service-card">
+          <div class="card-icon">🌐</div>
+          <h3 class="card-title">Web Development</h3>
+          <p class="card-text">Modern sites and portals for local businesses with ongoing support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="about">
+      <div class="section-title">
+        <span>Why Learnermission</span>
+        <h2>Built for Nepal, ready for you</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-chip">🔒 Genuine Products</div>
+        <div class="why-chip">📞 Local Support</div>
+        <div class="why-chip">💰 Transparent Pricing</div>
+        <div class="why-chip">🛡 After-sales Service</div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div class="logo-mark" style="background:#1f3a93;">L</div>
+          <div class="logo-text" style="color:#fff;">
+            <span class="logo-title">Learnermission</span>
+            <span class="logo-tagline" style="color:#cbd5e1;">Technology that Serves You</span>
+          </div>
+        </div>
+        <p style="color:#cbd5e1;">Local tech shop for students, offices, and small businesses in Nepal.</p>
+      </div>
+      <div>
+        <div class="footer-title">Quick links</div>
+        <a class="footer-link" href="#home">Home</a>
+        <a class="footer-link" href="shop.html">Shop</a>
+        <a class="footer-link" href="#services">Services</a>
+        <a class="footer-link" href="#about">About</a>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-link">📞 +977-9800000000</div>
+        <div class="footer-link">✉️ hello@learnermission.com</div>
+        <div class="footer-link">📍 Kathmandu, Nepal</div>
+      </div>
+      <div>
+        <div class="footer-title">Follow</div>
+        <div class="footer-link">Facebook</div>
+        <div class="footer-link">Instagram</div>
+        <div class="footer-link">YouTube</div>
+      </div>
+    </div>
+    <div class="container footer-meta">© 2025 Learnermission. All rights reserved.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | Learnermission</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner container">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="logo-mark">L</div>
+        <div class="logo-text">
+          <span class="logo-title">Learnermission</span>
+          <span class="logo-tagline">Technology that Serves You</span>
+        </div>
+      </div>
+      <nav class="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" aria-label="Search">&#128269;</button>
+        <button class="icon-btn" aria-label="Cart">&#128722;</button>
+        <button class="icon-btn" aria-label="Account">&#128100;</button>
+        <button class="icon-btn burger" aria-label="Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:48px 0 96px;">
+    <div class="section-title" style="margin-bottom:24px;">
+      <span>Product</span>
+      <h2>Lenovo IdeaPad 5 Ryzen 7</h2>
+    </div>
+
+    <div class="detail-layout">
+      <div class="gallery">
+        <img src="https://via.placeholder.com/560x360" alt="Lenovo IdeaPad 5" style="border-radius:10px;">
+        <div class="thumb-row">
+          <div class="thumb active"><img src="https://via.placeholder.com/120x80" alt="Thumb 1"></div>
+          <div class="thumb"><img src="https://via.placeholder.com/120x80" alt="Thumb 2"></div>
+          <div class="thumb"><img src="https://via.placeholder.com/120x80" alt="Thumb 3"></div>
+          <div class="thumb"><img src="https://via.placeholder.com/120x80" alt="Thumb 4"></div>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <h1 class="detail-title">Lenovo IdeaPad 5 Ryzen 7</h1>
+        <div class="detail-price">NPR 98,000</div>
+        <div class="detail-meta">
+          <span class="meta-chip">In stock</span>
+          <span class="meta-chip">Free delivery in KTM</span>
+          <span class="meta-chip">1-year warranty</span>
+        </div>
+        <p style="color:var(--color-muted);">Slim 14" laptop with AMD Ryzen 7, 16GB RAM, 512GB SSD, great for students and professionals. Matte display, backlit keyboard, and fast Wi‑Fi 6.</p>
+        <div style="display:flex;gap:10px;margin:18px 0 10px;flex-wrap:wrap;">
+          <button class="btn btn-primary" style="flex:1;min-width:180px;">Add to Cart</button>
+          <button class="btn btn-ghost" style="flex:1;min-width:180px;">Request info</button>
+        </div>
+        <div class="why-grid" style="margin-top:12px;">
+          <div class="why-chip">🔒 Genuine product</div>
+          <div class="why-chip">📞 Local support</div>
+          <div class="why-chip">💬 Transparent pricing</div>
+          <div class="why-chip">🛡 After-sales service</div>
+        </div>
+
+        <div class="tab-row">
+          <button class="tab-btn active" data-tab="desc">Description</button>
+          <button class="tab-btn" data-tab="specs">Specifications</button>
+          <button class="tab-btn" data-tab="reviews">Reviews</button>
+        </div>
+
+        <div class="tab-panel active" id="tab-desc">
+          <p style="color:var(--color-muted);">The IdeaPad 5 delivers dependable performance with Ryzen 7 power, quiet thermals, and a comfortable keyboard. Perfect for productivity, browsing, and streaming with long-lasting battery life.</p>
+        </div>
+        <div class="tab-panel" id="tab-specs">
+          <table class="specs-table">
+            <tr><td>CPU</td><td>AMD Ryzen 7 7730U</td></tr>
+            <tr><td>Memory</td><td>16GB LPDDR4X</td></tr>
+            <tr><td>Storage</td><td>512GB NVMe SSD</td></tr>
+            <tr><td>Display</td><td>14" FHD, anti-glare</td></tr>
+            <tr><td>Graphics</td><td>Radeon integrated</td></tr>
+            <tr><td>Ports</td><td>USB-C, USB-A, HDMI, audio jack</td></tr>
+          </table>
+        </div>
+        <div class="tab-panel" id="tab-reviews">
+          <div class="empty-state">
+            <h3 style="margin:0 0 6px;">No reviews yet</h3>
+            <p style="margin:0;color:var(--color-muted);">Be the first to review this product.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="sticky-cta">
+    <button class="btn btn-primary">Add to Cart</button>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <div class="logo-mark" style="background:#1f3a93;">L</div>
+          <div class="logo-text" style="color:#fff;">
+            <span class="logo-title">Learnermission</span>
+            <span class="logo-tagline" style="color:#cbd5e1;">Technology that Serves You</span>
+          </div>
+        </div>
+        <p style="color:#cbd5e1;">Local tech shop for students, offices, and small businesses in Nepal.</p>
+      </div>
+      <div>
+        <div class="footer-title">Quick links</div>
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="shop.html">Shop</a>
+        <a class="footer-link" href="index.html#services">Services</a>
+        <a class="footer-link" href="index.html#about">About</a>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-link">📞 +977-9800000000</div>
+        <div class="footer-link">✉️ hello@learnermission.com</div>
+        <div class="footer-link">📍 Kathmandu, Nepal</div>
+      </div>
+      <div>
+        <div class="footer-title">Follow</div>
+        <div class="footer-link">Facebook</div>
+        <div class="footer-link">Instagram</div>
+        <div class="footer-link">YouTube</div>
+      </div>
+    </div>
+    <div class="container footer-meta">© 2025 Learnermission. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Simple tab switcher
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const target = btn.dataset.tab;
+        document.getElementById(`tab-${target}`).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
